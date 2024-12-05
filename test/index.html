@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FilledIn Talent</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <!-- Default Logo (for non-Arabic languages) -->
+            <img src="https://res.cloudinary.com/dtpl6x0sk/image/upload/v1732055953/%D8%B5%D9%88%D8%B1%D8%A9_%D9%88%D8%A7%D8%AA%D8%B3%D8%A7%D8%A8_%D8%A8%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE_1446-05-18_%D9%81%D9%8A_01.36.00_fc4f4e41-removebg-preview_nldm4b.png" alt="FilledIn Talent Logo" class="default-logo">
+            
+            <!-- Arabic Logo (will be shown only if the page is in Arabic) -->
+            <img src="https://res.cloudinary.com/dtpl6x0sk/image/upload/v1733228218/Recruitments/Arabiclogo.png" alt="Arabic Logo" class="arabic-logo">
+        </div>
+
+        <button class="hamburger" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="nav-menu">
+            <div class="nav-top">
+                <a href="#" data-translate="businesses">Businesses</a>
+                <a href="#" data-translate="jobSeekers">Job Seekers</a>
+                <a href="#" data-translate="aboutFINT">About FINT</a>
+                <a href="#" data-translate="dropCV">Drop CV</a>
+            </div>
+            <div class="nav-bottom">
+                <div class="dropdown">
+                    <button class="language" data-translate="language">Languages 🌐</button>
+                    <div class="dropdown-content">
+                        <a href="#" onclick="switchLanguage('en')">English</a>
+                        <a href="#" onclick="switchLanguage('fr')">Français</a>
+                        <a href="#" onclick="switchLanguage('ar')">العربية</a>
+                    </div>
+                </div>
+                <a href="#" class="contact" data-translate="contactTouch">📧 Get In Touch</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="english" class="search-section language-section">
+            <h2 data-translate="careerMove">Ready for your next career move?</h2>
+            <div class="search-options">
+                <div class="option"  data-translate="keywords">Keywords, Job title</div>
+                <div class="option"  data-translate="category">Category</div>
+                <div class="option"  data-translate="workingType">Working type</div>
+                <div class="option" data-translate="location">Location</div>
+                <button class="submit-button"  data-translate="submitCV">Submit CV</button>
+            </div>
+        </section>
+
+    </main>
+
+    <section class="industry-trends" style="background-image: url('https://res.cloudinary.com/dtpl6x0sk/image/upload/v1732057807/%D9%86%D8%B3%D8%AE%D8%A9_%D9%85%D9%86_Recruitment_and_Selection_Policy_1_vj6b5d.png');">
+        <div class="text-block">
+            <h1 data-translate="industryTrends">Industry Trends</h1>
+        </div>
+        <div class="text-block-right">
+            <h2 data-translate="trendHeading">Leverage your own knowledge with Flexible Talent Global trends:</h2>
+            <p data-translate="trendQuote">"what is happening in the energy sector and what are the new complex challenges?"</p>
+        </div>
+    </section>
+  
+  <section class="hr-trends">
+      <div class="container1">
+          <h2 data-translate="hrTrends">HR Trends</h2>
+          <ul>
+              <li data-translate="hrTrendContent1">According to Gartner, in 2024, Leader and Manager development is a major focus for HR Leaders. To increase managers effectiveness, the organisations need to lighten the responsibilities of managers by reviewing role expectations and removing process hurdles.</li>
+              <li data-translate="hrTrendContent2">Heading into 2025, HR Leaders must redefine their strategies and priorities in key areas including developing managers, create a strategic workforce planning and optimise HR technology and data analytics. Moving beyond traditional leadership seminars to foster peer connections and embed learning opportunities into daily work allows managers to build stronger leadership skills and prepare for future demands. Emerging solutions, such as generative AI, have the potential to transform HR operations by streamlining processes, improving decision making and enhancing the employee experience.</li>
+          </ul>
+      </div>
+  </section>
+  <div class="section-2-container">
+    <img class="section-2-background" src="https://res.cloudinary.com/dtpl6x0sk/image/upload/v1733415602/WomenEng_y4tjwr.png" alt="A female engineer in a white helmet and safety vest holding a walkie-talkie and a blueprint, with an industrial background">
+    <div class="section-2-text">
+        <h2 data-translate="featuredJobs">Featured Jobs</h2>
+        <p data-translate="engineer">Engineer</p>
+        <p data-translate="hse">HSE</p>
+        <p data-translate="compliance">Compliance</p>
+        <p data-translate="electricalEngineer">Electrical Engineer</p>
+        <h2 data-translate="featuredEmployees">Featured Employees</h2>
+        <p data-translate="testimony1">Testimony 1</p>
+        <p data-translate="testimony2">Testimony 2</p>
+    </div>
+</div>
+
+<div class="section-3-container">
+  <h1 data-translate="trendsOfTheMonth"><i class="fas fa-chart-line"></i> Trends of the month - The Middle East:</h1>
+  <div class="section-3-content">
+      <p data-translate="trendContent1"><i class="fas fa-oil-can"></i> The Middle East region contributes globally to 37% of oil production and 35% of natural gas production, with oil production dominated by Saudi Arabia (35%), Iran (14%), and Iraq (13%) and gas production dominated by Iran (28%), Qatar (22%), ans Saudi Arabia (14%).</p>
+      <p data-translate="trendContent2"><i class="fas fa-chart-bar"></i> The energy sector is a central driver of Saudi Arabia's economy, contributing around 42% of its GDP. Oil accounts for 90% of the country's exports and nearly 75% of government revenue.</p>
+      <p data-translate="trendContent3"><i class="fas fa-sun"></i> Many countries in the region are building or planning solar and wind projects. Energy investment in the Middle East is expected to reach approximately $ 175 billion in 2024, with clean energy accounting for around 15% of the total investment. Saudi Arabia is working to diversify its economy and reduce its reliance on oil revenues. It has built several solar and wind power plants, and is working on building the world's largest hydrogen production plant. The Saudi Kingdom placed itself at the forefront of the emerging renewable superpowers. The renewable energy market is estimated to increase from 8.33GW in 2024, to 23,74 GW by 2029.</p>
+      <p data-translate="trendContent4"><i class="fas fa-wind"></i> The UAE aims to triple its renewable energy base by 2030. Energy investment in the Middle East is expected to reach approximately $ 175 billion in 2024, with clean energy accounting for around 15% of the total investment.</p>
+      <p data-translate="trendContent5"><i class="fas fa-leaf"></i> As the World's third largest producer of liquefied natural gaz, Qatar's targets include increasing the share of renewable energy in its power mix to 18% by 2030 and adding 4 GW of solar power by 2030.</p>
+  </div>
+</div>
+
+</body>
+</html>
