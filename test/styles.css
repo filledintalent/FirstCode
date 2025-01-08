@@ -3,7 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+a {
+    color: inherit; 
+    text-decoration: none;
+}
 body {
     margin: 0;
     background-color: #c6d8e6;
@@ -314,7 +317,6 @@ main {
 }
 
 .container1 {
-    max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -816,13 +818,13 @@ main {
 }
 .section-2-text h2 {
     color: #2c3e50;
-    font-size: 24px;
+    font-size: 36px;
     margin-bottom: 10px;
     font-weight: 700;
 }
 .section-2-text p {
     color: #000000;
-    font-size: 18px;
+    font-size: 24px;
     margin: 5px 0;
     font-weight: 400;
 }
@@ -958,3 +960,227 @@ main {
     margin: 0 !important;}   
   
 }
+
+/* Image Styles */
+.image-container {
+    position: relative;
+    margin: 2rem 0;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(32, 72, 130, 0.1);
+    transition: all 0.3s ease;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.image-container:hover {
+    box-shadow: 0 6px 12px rgba(32, 72, 130, 0.15);
+}
+
+.image-container:hover img {
+    transform: scale(1.02);
+}
+
+.image-caption {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    background-color: rgba(32, 72, 130, 0.9);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+/* Image Spacing Utilities */
+.img-spacing-sm {
+    margin: 1rem 0;
+    padding: 0.5rem;
+}
+
+.img-spacing-md {
+    margin: 2rem 0;
+    padding: 1rem;
+}
+
+.img-spacing-lg {
+    margin: 3rem 0;
+    padding: 1.5rem;
+}
+
+/* Image Alignment */
+.img-align-left {
+    float: left;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+}
+
+.img-align-right {
+    float: right;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+.img-align-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Responsive Image Styles */
+@media (max-width: 768px) {
+    .image-container {
+        margin: 1.5rem 0;
+        padding: 0.75rem;
+    }
+    
+    .img-spacing-sm {
+        margin: 0.75rem 0;
+        padding: 0.25rem;
+    }
+    
+    .img-spacing-md {
+        margin: 1.5rem 0;
+        padding: 0.75rem;
+    }
+    
+    .img-spacing-lg {
+        margin: 2rem 0;
+        padding: 1rem;
+    }
+    
+    .img-align-left,
+    .img-align-right {
+        float: none;
+        margin: 1rem auto;
+        display: block;
+    }
+}
+
+/* New Industry Trends Styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    font-size: 2em;
+    color: #2c3e50;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.content-left {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.content-right {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.content-right .item {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.content-right .item img {
+    width: 100%;
+    height: auto;
+}
+
+.subheader {
+    font-size: 1.5em;
+    color: #2c3e50;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.text-content {
+    font-size: 1.5em;
+    color: #000;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.text-content strong {
+    font-weight: 700;
+}
+
+.three-items {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.three-items .item {
+    width: 32%;
+    margin-bottom: 20px;
+}
+
+.three-items .item img {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+    .content-left, .content-right {
+        margin-right: 0;
+    }
+    .three-items {
+        flex-direction: column;
+    }
+    .three-items .item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .image-container {
+        margin: 1rem 0;
+        padding: 0.5rem;
+    }
+    
+    .image-caption {
+        bottom: 1rem;
+        left: 1rem;
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
+    }
+    
+    .img-spacing-sm {
+        margin: 0.5rem 0;
+    }
+    
+    .img-spacing-md {
+        margin: 1rem 0;
+    }
+    
+    .img-spacing-lg {
+        margin: 1.5rem 0;
+    }
+}
+
